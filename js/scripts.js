@@ -41,4 +41,4 @@ if (localStorage.getItem('localColorArr') === null) {
 document.title = (
   (new Date()).toTimeString().split(':').slice(0,2).join(':') +
   ' — ' + (new Date()).toDateString()
-);
+)
