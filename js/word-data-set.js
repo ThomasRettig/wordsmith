@@ -1,4 +1,4 @@
-var words = [
+const words = [
 	{
 	  "id": 1,
 	  "word": "abate",
@@ -4396,7 +4396,7 @@ var words = [
     "word": "pithy",
     "definition": "brief, forceful and meaningful in expression",
     "wordtype": "adjective",
-    "synonyms": "succinct, terse, concis"
+    "synonyms": "succinct, terse, concise"
   },
   {
     "id": 4358,
