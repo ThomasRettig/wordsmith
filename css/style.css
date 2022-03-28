@@ -3,25 +3,22 @@
    ========================================================================== */
 
 @font-face {
-  font-family: 'Atlas Grotesk';
-  font-weight: 500;
-  src: url('../fonts/AtlasGrotesk-Medium-Web.woff2') format('woff2');
+  font-family: 'Mayenne Sans';
+  font-weight: 700;
+  font-display: swap;
+  src: url('../fonts/MayenneSans-Regular-Web.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'Atlas Grotesk';
   font-weight: 400;
+  font-display: swap;
   src: url('../fonts/AtlasGrotesk-Regular-Web.woff2') format('woff2');
-  
 }
 
 /* ==========================================================================
    CSS Reset
    ========================================================================== */
-
-html {
-  height: 100%;
-}
 
 html, body, section, h1, p {
   margin: 0;
@@ -29,7 +26,6 @@ html, body, section, h1, p {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline;
 }
 
 /* ==========================================================================
@@ -59,51 +55,65 @@ html, body, section, h1, p {
 }
 
 .slideUpFirst {
- animation: slideUpFirst 1300ms ease;
+ animation: slideUpFirst 1350ms ease;
 }
 
 .slideUpSecond {
- animation: slideUpSecond 1300ms ease;
+ animation: slideUpSecond 1350ms ease;
 }
 
 /* ==========================================================================
    Main styles
    ========================================================================== */
 
+::selection {
+  background-color: hsl(0deg 0% 100% / 21%);
+}
+
 body {
+  font-family: 'Atlas Grotesk', system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
+  display: grid;
+  place-items: center;
   background: #222;
   color: white;
-  height: 100%;
-  font-family: 'Atlas Grotesk';
 }
 
-section {
-  margin: auto;
-  display: flex;
-}
-
-.container {
-  margin: auto;
-  width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.container__definitions {
-  max-width: 630px;
+h1 {
+  font-size: 30px;
 }
 
 p {
   font-size: 20px;
 }
 
+/* link styles */
+
 a {
   opacity: 0.75;
   color: #fff;
-  border-bottom: 1px solid #ffffff42;
+  text-decoration-color: #ffffff42;
+  text-underline-offset: 1px;
+  text-decoration-thickness: 1.5px;
+  transition: 300ms ease;
+}
+
+a:hover {
+  text-decoration-color: #ffffff66;
+  opacity: 1;
+}
+
+a:focus-visible {
+  outline: 2px solid white;
   text-decoration: none;
-  margin-left: 10px;
+}
+
+.container {
+  margin: 5vw auto;
+}
+
+.container__definitions {
+  max-width: 630px;
 }
 
 .definitions {
@@ -111,23 +121,22 @@ a {
 }
 
 .text__word {
-  font-weight: 500;
+  font-family: 'Mayenne Sans';
   font-size: 45px;
   display: inline;
   padding-top: 15px;
 }
 
 .text__definition {
-  font-size: 29px;
+  font-size: 25px;
   line-height: 40px;
   padding-top: 15px;
 }
 
-.text__type {
-  display: inline;
-  margin-top: 16px;
+sup {
+  font-size: 21px;
   opacity: 0.75;
-  padding-left: 13px;
+  padding-left: 10px;
   position: absolute;
 }
 
@@ -138,4 +147,20 @@ a {
 
 .text__synonyms--title {
   opacity: 0.75;
+}
+
+/* ==========================================================================
+   Media queries
+   ========================================================================== */
+
+@media screen and (max-width: 700px) {
+ .container {
+   margin: 5vw;
+ }
+
+ sup {
+  padding-left: 0;
+  position: revert;
+  display: block;
+ }
 }
