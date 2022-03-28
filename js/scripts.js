@@ -1,17 +1,16 @@
 // Randomly select words from object and place into DOM
-var $word = words[Math.floor(Math.random()*words.length)];
+var word = words[Math.floor(Math.random()*words.length)];
 
-var $wordName = $word.word;
-var $wordType = $word.wordtype;
-var $wordDefinition = $word.definition;
-var $wordSynonyms = $word.synonyms;
+const wordName = word.word;
+const wordType = word.wordtype;
+const wordDefinition = word.definition;
+const wordSynonyms = word.synonyms;
 
-$( '.js-word' ).html( $wordName );
-$( '.js-type' ).html( $wordType );
-$( '.js-definition' ).html( $wordDefinition);
-$( '.js-synonyms' ).html( $wordSynonyms );
-$( '.js-dict-link' ).attr('href', 'https://www.merriam-webster.com/dictionary/' + $wordName );
-
+document.querySelector('.js-word').innerHTML = wordName;
+document.querySelector('.js-type').innerHTML = wordType;
+document.querySelector('.js-definition').innerHTML = wordDefinition;
+document.querySelector('.js-synonyms').innerHTML = wordSynonyms;
+document.querySelector('.js-dict-link').setAttribute('href', `https://www.merriam-webster.com/dictionary/${wordName}`);
 
 // modify array
 function nextVal(arr) {
@@ -23,7 +22,7 @@ function nextVal(arr) {
 
 // set background color
 function backgroundColorDelta (firstElm) {
-	$( 'body' ).css('background-color', firstElm);
+	document.getElementsByTagName('body')[0].style.backgroundColor = firstElm;
 }
 
 if (localStorage.getItem('localColorArr') === null) {

@@ -289,7 +289,7 @@ var words = [
   {
     "id": 288,
     "word": "animus",
-    "definition": "the basic impulses and instincts which govern one's actions",
+    "definition": "the basic impulses and instincts which govern one’s actions",
     "wordtype": "noun",
     "synonyms": "temper, spirit, mind"
   },
@@ -493,7 +493,7 @@ var words = [
   {
     "id": 523,
     "word": "avocation",
-    "definition": "a subordinate occupation pursued in addition to one's vocation especially for enjoyment",
+    "definition": "a subordinate occupation pursued in addition to one’s vocation especially for enjoyment",
     "wordtype": "noun",
     "synonyms": "hobby, pursuit, recreation"
   },
@@ -1272,7 +1272,7 @@ var words = [
   {
     "id": 1451,
     "word": "deign",
-    "definition": "do something that one considers to be beneath one's dignity",
+    "definition": "do something that one considers to be beneath one’s dignity",
     "wordtype": "verb",
     "synonyms": " condescend, stoop"
   },
@@ -1916,7 +1916,7 @@ var words = [
   {
     "id": 2100,
     "word": "espouse",
-    "definition": "to make one's own, adopt or embrace, as a cause",
+    "definition": "to make one’s own, adopt or embrace, as a cause",
     "wordtype": "verb",
     "synonyms": "adopt, embrace, take up"
   },
@@ -2252,7 +2252,7 @@ var words = [
   {
     "id": 2298,
     "word": "felicity",
-    "definition": "the ability to find appropriate expression for one's thoughts",
+    "definition": "the ability to find appropriate expression for one’s thoughts",
     "wordtype": "noun",
     "synonyms": "happiness, joy, joyfulness"
   },
@@ -2672,7 +2672,7 @@ var words = [
   {
     "id": 2654,
     "word": "habitude",
-    "definition": "the essential character of one's being or existence",
+    "definition": "the essential character of one’s being or existence",
     "wordtype": "noun",
     "synonyms": "affection, affinity, aptitude"
   },
@@ -3750,7 +3750,7 @@ var words = [
   {
     "id": 3557,
     "word": "malinger",
-    "definition": "to pretend illness, especially in order to shirk one's duty",
+    "definition": "to pretend illness, especially in order to shirk one’s duty",
     "wordtype": "verb",
     "synonyms": "feign illness"
   },
@@ -4009,7 +4009,7 @@ var words = [
   {
     "id": 3922,
     "word": "obdurate",
-    "definition": "stubbornly refusing to change one's opinion or course of action",
+    "definition": "stubbornly refusing to change one’s opinion or course of action",
     "wordtype": "adjective",
     "synonyms": "inflexible, unyielding"
   },
@@ -4030,7 +4030,7 @@ var words = [
   {
     "id": 3947,
     "word": "obstinate",
-    "definition": "firmly or stubbornly adhering to one's purpose, opinion",
+    "definition": "firmly or stubbornly adhering to one’s purpose, opinion",
     "wordtype": "adjective",
     "synonyms": "stubborn, unyielding, inflexible"
   },
@@ -4450,7 +4450,7 @@ var words = [
   {
     "id": 4380,
     "word": "plenary",
-    "definition": "fully attended, for everyone's attendance",
+    "definition": "fully attended, for everyone’s attendance",
     "wordtype": "adjective",
     "synonyms": "unconditional, unlimited"
   },
@@ -4492,7 +4492,7 @@ var words = [
   {
     "id": 4422,
     "word": "pontificate",
-    "definition": "express one's opinions in a way considered annoyingly pompous and dogmatic",
+    "definition": "express one’s opinions in a way considered annoyingly pompous and dogmatic",
     "wordtype": "verb",
     "synonyms": "preach, declaim, dogmatize"
   },
@@ -4870,7 +4870,7 @@ var words = [
   {
     "id": 4734,
     "word": "rapine",
-    "definition": "the seizure of one's property by force, plunder",
+    "definition": "the seizure of one’s property by force, plunder",
     "wordtype": "noun",
     "synonyms": "plundering, pillage"
   },
@@ -5766,7 +5766,7 @@ var words = [
   {
     "id": 5282,
     "word": "stanch",
-    "definition": "firm in one's allegiance to someone or something",
+    "definition": "firm in one’s allegiance to someone or something",
     "wordtype": "verb",
     "synonyms": "constant, dedicated"
   },
@@ -5920,7 +5920,7 @@ var words = [
   {
     "id": 5349,
     "word": "subliminal",
-    "definition": "perceived by or affecting someone's mind without their being aware of it",
+    "definition": "perceived by or affecting someone’s mind without their being aware of it",
     "wordtype": "adjective",
     "synonyms": "subconscious, concealed, hidden"
   },
@@ -6032,7 +6032,7 @@ var words = [
   {
     "id": 5423,
     "word": "surmount",
-    "definition": "to achieve vistory over",
+    "definition": "to achieve victory over",
     "wordtype": "verb",
     "synonyms": "beat, best, conquer, defeat"
   },
@@ -6235,7 +6235,7 @@ var words = [
   {
     "id": 5582,
     "word": "trammel",
-    "definition": "a restriction or impediment to someone's freedom of action",
+    "definition": "a restriction or impediment to someone’s freedom of action",
     "wordtype": "noun",
     "synonyms": "restraint, constraint, curb"
   },
@@ -6802,7 +6802,7 @@ var words = [
   {
     "id": 5957,
     "word": "whet",
-    "definition": "to increase someone's interest in and wish for something, usually by giving them a small experience of it",
+    "definition": "to increase someone’s interest in and wish for something, usually by giving them a small experience of it",
     "wordtype": "verb",
     "synonyms": "stimulate, excite, rouse"
   },

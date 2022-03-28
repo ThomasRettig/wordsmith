@@ -1,133 +1,141 @@
-@import url(reset.css);
-@font-face {
-  font-family: 'atlas-grotesk-med';
-  src: url("../fonts/AtlasGrotesk-Medium-Web.eot");
-  /* IE9 Compat Modes */
-  src: url("../fonts/AtlasGrotesk-Medium-Web.eot?#iefix") format("embedded-opentype"), url("../fonts/AtlasGrotesk-Medium-Web.woff2") format("woff2"), url("../fonts/AtlasGrotesk-Medium-Web.woff") format("woff"), url("../fonts/AtlasGrotesk-Medium-Web.ttf") format("truetype"), url("../fonts/AtlasGrotesk-Medium-Web.svg#svgFontName") format("svg");
-  /* Legacy iOS */ }
-@font-face {
-  font-family: 'atlas-grotesk-reg';
-  src: url("../fonts/AtlasGrotesk-Regular-Web.eot");
-  /* IE9 Compat Modes */
-  src: url("../fonts/AtlasGrotesk-Regular-Web.eot?#iefix") format("embedded-opentype"), url("../fonts/AtlasGrotesk-Regular-Web.woff2") format("woff2"), url("../fonts/AtlasGrotesk-Regular-Web.woff") format("woff"), url("../fonts/AtlasGrotesk-Regular-Web.ttf") format("truetype"), url("../fonts/AtlasGrotesk-Regular-Web.svg#svgFontName") format("svg");
-  /* Legacy iOS */ }
-.slideUpFirst {
-  animation: slideUpFirst 1300ms ease; }
+/* ==========================================================================
+   Fonts
+   ========================================================================== */
 
-@keyframes slideUpFirst {
-  0% {
-    transform: translateY(10px);
-    opacity: 0; }
-  100% {
-    transform: translateY(0px);
-    opacity: 1; } }
-.slideUpSecond {
-  animation: slideUpSecond 1300ms ease; }
+@font-face {
+  font-family: 'Atlas Grotesk';
+  font-weight: 500;
+  src: url('../fonts/AtlasGrotesk-Medium-Web.woff2') format('woff2');
+}
 
-@keyframes slideUpSecond {
-  0% {
-    transform: translateY(10px);
-    opacity: 0; }
-  100% {
-    transform: translateY(0px);
-    opacity: 1; } }
+@font-face {
+  font-family: 'Atlas Grotesk';
+  font-weight: 400;
+  src: url('../fonts/AtlasGrotesk-Regular-Web.woff2') format('woff2');
+  
+}
+
+/* ==========================================================================
+   CSS Reset
+   ========================================================================== */
+
 html {
   height: 100%;
-  overflow: hidden; }
+}
+
+html, body, section, h1, p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* ==========================================================================
+   Keyframes
+   ========================================================================== */
+
+@keyframes slideUpFirst {
+ 0% {
+   transform: translateY(10px);
+   opacity: 0;
+ }
+ 100% {
+   transform: translateY(0px);
+   opacity: 1;
+ }
+}
+
+@keyframes slideUpSecond {
+ 0% {
+   transform: translateY(10px);
+   opacity: 0;
+ }
+ 100% {
+   transform: translateY(0px);
+   opacity: 1;
+ }
+}
+
+.slideUpFirst {
+ animation: slideUpFirst 1300ms ease;
+}
+
+.slideUpSecond {
+ animation: slideUpSecond 1300ms ease;
+}
+
+/* ==========================================================================
+   Main styles
+   ========================================================================== */
 
 body {
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   background: #222;
-  color: #fff;
+  color: white;
   height: 100%;
-  font-family: 'atlas-grotesk-reg'; }
+  font-family: 'Atlas Grotesk';
+}
 
 section {
   margin: auto;
-  display: flex; }
+  display: flex;
+}
 
 .container {
   margin: auto;
   width: 100%;
   padding-left: 15px;
-  padding-right: 15px; }
+  padding-right: 15px;
+}
 
 .container__definitions {
-  max-width: 630px; }
+  max-width: 630px;
+}
 
 p {
-  font-family: 'atlas-grotesk-reg';
-  font-size: 20px; }
+  font-size: 20px;
+}
 
 a {
+  opacity: 0.75;
   color: #fff;
   border-bottom: 1px solid #ffffff42;
-  text-decoration: none; }
+  text-decoration: none;
+  margin-left: 10px;
+}
 
 .definitions {
-  height: 90%; }
-  .definitions h1.text__word {
-    font-family: 'atlas-grotesk-med';
-    font-size: 45px;
-    display: inline;
-    padding-top: 15px; }
-  .definitions p.text__definition {
-    font-size: 29px;
-    line-height: 40px;
-    padding-top: 15px; }
-  .definitions p.text__type {
-    display: inline;
-    margin-top: 16px;
-    opacity: 0.4;
-    padding-left: 13px;
-    position: absolute; }
-  .definitions p.text__synonyms {
-    padding-top: 35px;
-    line-height: 31px; }
-    .definitions p.text__synonyms span.text__synonyms--title {
-      opacity: 0.4; }
-    .definitions p.text__synonyms a {
-      opacity: 0.4;
-      margin-left: 10px; }
+  height: 90%;
+}
 
-.footer {
-  height: 10%;
-  width: 100%; }
-  .footer ul {
-    font-size: 13px;
-    opacity: 0.5; }
-    .footer ul li {
-      display: inline;
-      padding-right: 15px;
-      position: relative; }
-      .footer ul li span.text__credits span.text--reveal {
-        opacity: 0;
-        left: 20px;
-        position: absolute;
-        -webkit-transition: left 500ms ease, opacity 200ms ease;
-        transition: left 500ms ease, opacity 200ms ease;
-        width: 600px; }
-      .footer ul li span.text__credits:hover {
-        cursor: pointer; }
-        .footer ul li span.text__credits:hover span.text--reveal {
-          opacity: 1;
-          left: 60px;
-          -webkit-transition: left 200ms ease, opacity 500ms ease;
-          transition: left 200ms ease, opacity 500ms ease; }
-    .footer ul.footer--left {
-      bottom: 30px;
-      left: 30px;
-      line-height: 22px;
-      position: absolute;
-      text-align: center;
-      right: 30px; }
-      @media only screen and (min-width: 700px) {
-        .footer ul.footer--left {
-          text-align: left; } }
-    .footer ul.footer--right {
-      float: right; }
-      .footer ul.footer--right img {
-        width: 120px; }
+.text__word {
+  font-weight: 500;
+  font-size: 45px;
+  display: inline;
+  padding-top: 15px;
+}
 
-/*# sourceMappingURL=style.css.map */
+.text__definition {
+  font-size: 29px;
+  line-height: 40px;
+  padding-top: 15px;
+}
+
+.text__type {
+  display: inline;
+  margin-top: 16px;
+  opacity: 0.75;
+  padding-left: 13px;
+  position: absolute;
+}
+
+.text__synonyms {
+  padding-top: 35px;
+  line-height: 31px;
+}
+
+.text__synonyms--title {
+  opacity: 0.75;
+}
