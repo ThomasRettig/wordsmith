@@ -1825,7 +1825,7 @@ var words = [
   {
     "id": 2073,
     "word": "epode",
-    "definition": "a lyric poem in which a short verse follws a long one",
+    "definition": "a lyric poem in which a short verse follows a long one",
     "wordtype": "noun",
     "synonyms": "ballad, lyrics, composition"
   },
@@ -3094,7 +3094,7 @@ var words = [
     "word": "inexpedient",
     "definition": "not tending to the end desired, inadvisable, unfit, improper",
     "wordtype": "adjective",
-    "synonyms": ""
+    "synonyms": "counterproductive, feckless, hamstrung"
   },
   {
     "id": 3061,
