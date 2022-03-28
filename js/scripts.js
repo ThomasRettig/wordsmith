@@ -37,3 +37,8 @@ if (localStorage.getItem('localColorArr') === null) {
 	// set setLocalStorage = modifiedArray;
 	localStorage.setItem('localColorArr', JSON.stringify(modifiedColors));
 }
+
+document.title = (
+  (new Date()).toTimeString().split(':').slice(0,2).join(':') +
+  ' — ' + (new Date()).toDateString()
+);
