@@ -164,3 +164,10 @@ sup {
   display: block;
  }
 }
+
+@media screen and (prefers-reduced-motion: reduce) {
+  * {
+    animation: 0ms !important;
+    transition: 0ms !important;
+  }
+}
