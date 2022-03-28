@@ -9,23 +9,18 @@
   src: url('../fonts/MayenneSans-Regular-Web.woff2') format('woff2');
 }
 
-@font-face {
-  font-family: 'Atlas Grotesk';
-  font-weight: 400;
-  font-display: swap;
-  src: url('../fonts/AtlasGrotesk-Regular-Web.woff2') format('woff2');
-}
-
 /* ==========================================================================
    CSS Reset
    ========================================================================== */
+
+html {
+  -webkit-font-smoothing: antialiased;
+}
 
 html, body, section, h1, p {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
-  font: inherit;
 }
 
 /* ==========================================================================
@@ -71,8 +66,7 @@ html, body, section, h1, p {
 }
 
 body {
-  font-family: 'Atlas Grotesk', system-ui, sans-serif;
-  -webkit-font-smoothing: antialiased;
+  font-family: system-ui, sans-serif;
   display: grid;
   place-items: center;
   background: #222;
@@ -100,6 +94,7 @@ a:hover {
 }
 
 a:focus-visible {
+  transition: none;
   outline: 2px solid white;
   text-decoration: none;
 }
@@ -118,14 +113,12 @@ a:focus-visible {
 
 .text__word {
   font-family: 'Mayenne Sans';
-  font-size: 45px;
+  font-size: clamp(35px, 10vw, 47px);
   display: inline;
   padding-top: 15px;
 }
 
 .text__definition {
-  font-size: 25px;
-  line-height: 40px;
   padding-top: 15px;
 }
 
@@ -137,8 +130,8 @@ sup {
 }
 
 .text__synonyms {
-  padding-top: 35px;
-  line-height: 31px;
+  padding-top: calc(15px - 1vh);
+  line-height: 30px;
 }
 
 .text__synonyms--title {
