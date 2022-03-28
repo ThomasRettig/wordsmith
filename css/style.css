@@ -82,6 +82,7 @@ p {
 a {
   display: block;
   width: fit-content; /* quick hack to revert the `display: block` */
+  padding-top: calc(15px + 0.5vh);
   opacity: 0.75;
   color: #fff;
   text-decoration-color: #ffffff42;
@@ -132,8 +133,7 @@ sup {
 }
 
 .text__synonyms {
-  padding-top: calc(15px - 1vh);
-  line-height: 30px;
+  padding-top: calc(15px + 0.5vh);
 }
 
 .text__synonyms--title {
