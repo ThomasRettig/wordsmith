@@ -13,6 +13,10 @@
    CSS Reset
    ========================================================================== */
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   -webkit-font-smoothing: antialiased;
 }
@@ -20,7 +24,6 @@ html {
 html, body, section, h1, p {
   margin: 0;
   padding: 0;
-  border: 0;
 }
 
 /* ==========================================================================
@@ -65,16 +68,38 @@ html, body, section, h1, p {
   background-color: hsl(0deg 0% 100% / 21%);
 }
 
-body {
+body, button {
   font-family: 'Segoe UI Variable Text Regular', 'Segoe UI', system-ui, sans-serif;
+}
+
+body {
   display: grid;
   place-items: center;
   background: #222;
   color: white;
 }
 
-p {
+p, button {
   font-size: 20px;
+}
+
+button {
+  opacity: 0.75;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: 300ms ease;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+button:focus-visible {
+  transition: none;
+  outline: 2px solid white;
 }
 
 /* link styles */
@@ -104,6 +129,12 @@ a:focus-visible {
 
 .container {
   margin: 5vw auto;
+}
+
+footer {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
 }
 
 .container__definitions {

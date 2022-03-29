@@ -38,6 +38,10 @@ if (localStorage.getItem('localColorArr') === null) {
 	localStorage.setItem('localColorArr', JSON.stringify(modifiedColors));
 }
 
+document.getElementById('reload').addEventListener('click', () => {
+  window.location.reload();
+})
+
 document.title = (
   (new Date()).toTimeString().split(':').slice(0,2).join(':') +
   ' — ' + (new Date()).toDateString()
