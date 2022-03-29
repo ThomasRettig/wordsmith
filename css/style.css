@@ -67,7 +67,7 @@ html, body, section, h1, p {
    ========================================================================== */
 
 ::selection {
-  background-color: hsl(0deg 0% 100% / 21%);
+  background-color: hsl(0deg 0% 100% / 20%);
 }
 
 body {
