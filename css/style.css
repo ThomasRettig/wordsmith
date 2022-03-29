@@ -65,11 +65,11 @@ html, body, section, h1, p {
 }
 
 .slideUpFirst {
- animation: slideUpFirst 1300ms ease;
+  animation: slideUpFirst 1300ms ease;
 }
 
 .slideUpSecond {
- animation: slideUpSecond 1300ms ease;
+  animation: slideUpSecond 1300ms ease;
 }
 
 /* ==========================================================================
