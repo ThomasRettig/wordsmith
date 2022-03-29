@@ -37,3 +37,7 @@ if (localStorage.getItem('localColorArr') === null) {
 	// set setLocalStorage = modifiedArray;
 	localStorage.setItem('localColorArr', JSON.stringify(modifiedColors));
 }
+
+document.getElementById('reload').addEventListener('click', () => {
+  window.location.reload();
+})
