@@ -10,6 +10,18 @@
 }
 
 /* ==========================================================================
+   Variables
+   ========================================================================== */
+:root {
+  --base-font-size: 20px;
+  --large-font-size: clamp(35px, 10vw, 47px);
+  --base-font-stack: 'Segoe UI', system-ui, sans-serif;
+  --padding-top: calc(15px + 0.5vh);
+  --medium-opacity: 0.75;
+  --outline-white: 2px solid white;
+}
+
+/* ==========================================================================
    CSS Reset
    ========================================================================== */
 
@@ -53,11 +65,11 @@ html, body, section, h1, p {
 }
 
 .slideUpFirst {
- animation: slideUpFirst 1350ms ease;
+ animation: slideUpFirst 1300ms ease;
 }
 
 .slideUpSecond {
- animation: slideUpSecond 1350ms ease;
+ animation: slideUpSecond 1300ms ease;
 }
 
 /* ==========================================================================
@@ -68,8 +80,8 @@ html, body, section, h1, p {
   background-color: hsl(0deg 0% 100% / 21%);
 }
 
-body, button {
-  font-family: 'Segoe UI Variable Text Regular', 'Segoe UI', system-ui, sans-serif;
+body {
+  font-family: 'Segoe UI Variable Text Regular', var(--base-font-stack);
 }
 
 body {
@@ -79,12 +91,17 @@ body {
   color: white;
 }
 
-p, button {
-  font-size: 20px;
+p{
+  font-size: var(--base-font-size);
 }
 
 button {
-  opacity: 0.75;
+  font-family: 'Segoe UI Variable Small Regular', var(--base-font-stack);
+  font-size: calc(var(--base-font-size) - 4px);
+}
+
+button {
+  opacity: var(--medium-opacity);
   background: none;
   color: inherit;
   border: none;
@@ -99,7 +116,7 @@ button:hover {
 
 button:focus-visible {
   transition: none;
-  outline: 2px solid white;
+  outline: var(--outline-white);
 }
 
 /* link styles */
@@ -108,7 +125,7 @@ a {
   display: block;
   width: fit-content; /* quick hack to revert the `display: block` */
   padding-top: calc(15px + 0.5vh);
-  opacity: 0.75;
+  opacity: var(--medium-opacity);
   color: #fff;
   text-decoration-color: hsl(0deg 0% 100% / 26%);
   text-underline-offset: 1px;
@@ -123,7 +140,7 @@ a:hover {
 
 a:focus-visible {
   transition: none;
-  outline: 2px solid white;
+  outline: var(--outline-white);
   text-decoration: none;
 }
 
@@ -146,8 +163,8 @@ footer {
 }
 
 .text__word {
-  font-family: 'Mayenne Sans', 'Segoe UI Variable Display Black', 'Segoe UI', system-ui, sans-serif;
-  font-size: clamp(35px, 10vw, 47px);
+  font-family: 'Mayenne Sans', 'Segoe UI Variable Display Black', var(--base-font-stack);
+  font-size: var(--large-font-size);
   display: inline;
   padding-top: 15px;
 }
@@ -157,18 +174,18 @@ footer {
 }
 
 sup {
-  font-size: 21px;
-  opacity: 0.75;
+  font-size: var(--base-font-size);
+  opacity: var(--medium-opacity);
   padding-left: 10px;
   position: absolute;
 }
 
 .text__synonyms {
-  padding-top: calc(15px + 0.5vh);
+  padding-top: var(--padding-top);
 }
 
 .text__synonyms--title {
-  opacity: 0.75;
+  opacity: var(--medium-opacity);
 }
 
 /* ==========================================================================

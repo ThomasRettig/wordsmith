@@ -1,5 +1,5 @@
 // Randomly select words from object and place into DOM
-var word = words[Math.floor(Math.random()*words.length)];
+const word = words[Math.floor(Math.random()*words.length)];
 
 const wordName = word.word;
 const wordType = word.wordtype;
