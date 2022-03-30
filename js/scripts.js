@@ -38,11 +38,14 @@ if (localStorage.getItem('localColorArr') === null) {
 	localStorage.setItem('localColorArr', JSON.stringify(modifiedColors));
 }
 
+// handle refreshing
+
+document.addEventListener('keyup', event => {
+  if (event.code === 'Space') {
+    window.location.reload();
+  }
+})
+
 document.getElementById('reload').addEventListener('click', () => {
   window.location.reload();
 })
-
-document.title = (
-  (new Date()).toTimeString().split(':').slice(0,2).join(':') +
-  ' — ' + (new Date()).toDateString()
-)
