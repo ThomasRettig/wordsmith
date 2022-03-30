@@ -65,11 +65,11 @@ html, body, section, h1, p {
 }
 
 .slideUpFirst {
- animation: slideUpFirst 1300ms ease;
+  animation: slideUpFirst 1300ms ease;
 }
 
 .slideUpSecond {
- animation: slideUpSecond 1300ms ease;
+  animation: slideUpSecond 1300ms ease;
 }
 
 /* ==========================================================================
@@ -119,6 +119,22 @@ button:focus-visible {
   outline: var(--outline-white);
 }
 
+button::after {
+  content: "Or press the space bar";
+  font: inherit;
+  color: inherit;
+  display: none;
+}
+
+button:hover::after, button:focus::after {
+  content: "(Or press the space bar)";
+  opacity: calc(var(--medium-opacity) - 0.10);
+  margin-left: 5px;
+  font: inherit;
+  color: inherit;
+  display: revert;
+}
+
 /* link styles */
 
 a {
@@ -150,8 +166,8 @@ a:focus-visible {
 
 footer {
   position: absolute;
-  left: 20px;
-  bottom: 20px;
+  left: 24px;
+  bottom: 24px;
 }
 
 .container__definitions {
