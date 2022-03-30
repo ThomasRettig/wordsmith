@@ -119,6 +119,22 @@ button:focus-visible {
   outline: var(--outline-white);
 }
 
+button::after {
+  content: "Or press the space bar";
+  font: inherit;
+  color: inherit;
+  display: none;
+}
+
+button:hover::after {
+  content: "(Or press the space bar)";
+  opacity: calc(var(--medium-opacity) - 0.10);
+  margin-left: 5px;
+  font: inherit;
+  color: inherit;
+  display: revert;
+}
+
 /* link styles */
 
 a {
