@@ -126,7 +126,7 @@ button::after {
   display: none;
 }
 
-button:hover::after {
+button:hover::after, button:focus::after {
   content: "(Or press the space bar)";
   opacity: calc(var(--medium-opacity) - 0.10);
   margin-left: 5px;
