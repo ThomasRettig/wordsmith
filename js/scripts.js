@@ -40,7 +40,7 @@ if (localStorage.getItem('localColorArr') === null) {
 
 // handle refreshing
 
-document.addEventListener('keyup', event => {
+document.addEventListener('keyup', () => {
   if (event.code === 'Space') {
     window.location.reload();
   }
