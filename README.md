@@ -1,6 +1,7 @@
 # Wordsmith
 
 Important: This is a fork of the original repository: https://github.com/nschch/wordsmith
+
 You can view the web version here: https://wordsmithe.netlify.app/
 
 It contains multiple modifications/improvements:
