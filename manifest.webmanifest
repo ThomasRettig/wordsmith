@@ -1,7 +1,7 @@
 {
     "theme_color": "#132521",
     "background_color": "#132521",
-    "display_override": "minimal_ui",
+    "display": "minimal_ui",
     "orientation": "any",
     "scope": "/",
     "start_url": "/",
