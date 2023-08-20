@@ -1,0 +1,22 @@
+{
+  "name": "wordsmith",
+  "version": "1.0.0",
+  "description": "Learn new vocabulary on the go",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThomasRettig/wordsmith.git"
+  },
+  "author": "Thomas Rettig",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ThomasRettig/wordsmith/issues"
+  },
+  "homepage": "https://github.com/ThomasRettig/wordsmith#readme",
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+}
