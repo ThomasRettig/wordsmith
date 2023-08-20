@@ -4,10 +4,17 @@
     <meta charset="utf-8">
     <title>Wordsmith</title>
     <meta name="description" content="Learn new vocabulary on the go with Wordsmith!">
+    <meta name="author" content="Thomas Rettig">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="images/favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
     <link rel="stylesheet" href="css/style.css">
-  </head>
+    <link rel="manifest" href="manifest.webmanifest">
+    <!--SEO-->
+    <meta property="og:title" content="Wordsmith">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://wordsmith.netlify.app/">
+    <meta property="og:site_name" content="Wordsmith">
+    <meta property="og:description" content="Learn new vocabulary on the go with Wordsmith!">  </head>
   <body>
     <main class="definitions">
       <div class="container container__definitions slideUpFirst">
@@ -25,6 +32,11 @@
     <footer>
       <button id="reload">Reload</button>
     </footer>
+    <script>
+      if (navigator && navigator.serviceWorker) {
+        navigator.serviceWorker.register("sw.js");
+      };
+    </script>
     <script src="js/word-data-set.js"></script>
     <script src="js/scripts.js"></script>
   </body>

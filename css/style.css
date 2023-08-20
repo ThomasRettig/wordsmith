@@ -3,10 +3,10 @@
    ========================================================================== */
 
 @font-face {
-  font-family: 'Mayenne Sans';
+  font-family: "Mayenne Sans";
   font-weight: 700;
   font-display: swap;
-  src: url('../fonts/MayenneSans-Regular-Web.woff2') format('woff2');
+  src: url("../fonts/MayenneSans-Regular-Web.woff2") format("woff2");
 }
 
 /* ==========================================================================
@@ -15,7 +15,7 @@
 :root {
   --base-font-size: 20px;
   --large-font-size: clamp(35px, 10vw, 47px);
-  --base-font-stack: 'Segoe UI', system-ui, sans-serif;
+  --base-font-stack: "Segoe UI", system-ui, sans-serif;
   --padding-top: calc(15px + 0.5vh);
   --medium-opacity: 0.75;
   --outline-white: 2px solid white;
@@ -81,7 +81,7 @@ html, body, section, h1, p {
 }
 
 body {
-  font-family: 'Segoe UI Variable Text Regular', var(--base-font-stack);
+  font-family: "Segoe UI Variable Text Regular", var(--base-font-stack);
 }
 
 body {
@@ -96,7 +96,7 @@ p {
 }
 
 button {
-  font-family: 'Segoe UI Variable Small Regular', var(--base-font-stack);
+  font-family: "Segoe UI Variable Small Regular", var(--base-font-stack);
   font-size: calc(var(--base-font-size) - 4px);
 }
 
@@ -179,7 +179,7 @@ footer {
 }
 
 .text__word {
-  font-family: 'Mayenne Sans', 'Segoe UI Variable Display Black', var(--base-font-stack);
+  font-family: "Mayenne Sans", "Segoe UI Variable Display Black", var(--base-font-stack);
   font-size: var(--large-font-size);
   display: inline;
   padding-top: 15px;
