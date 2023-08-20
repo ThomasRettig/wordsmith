@@ -5,6 +5,10 @@ var urls = [
   "fonts/MayenneSans-Regular-Web.woff2",
   "css/style.css",
   "images/favicon.svg",
+  "images/icon-192x192.png",
+  "images/icon-256x256.png",
+  "images/banner-600x380.png",
+  "images/banner2-600x380.png",
   "js/scripts.js",
   "js/word-data-set.js",
   "manifest.webmanifest"
