@@ -4,7 +4,9 @@
   "description": "Learn new vocabulary on the go",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "netlify dev",
+    "deno": "deno run --allow-net --allow-env og/og.tsx",
+    "simple-dev": "http-server -p 0"
   },
   "repository": {
     "type": "git",
@@ -18,5 +20,8 @@
   "homepage": "https://github.com/ThomasRettig/wordsmith#readme",
   "dependencies": {
     "http-server": "^14.1.1"
+  },
+  "devDependencies": {
+    "css-loader": "^6.8.1"
   }
 }

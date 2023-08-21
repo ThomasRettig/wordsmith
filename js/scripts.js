@@ -32,7 +32,7 @@ localStorage.setItem("localColorArr", JSON.stringify(modifiedColors));
 // Change the background color
 document.body.style.backgroundColor = modifiedColors[0];
 
-// Sharing functionality
+// Copy to clipboard
 function copyToClipboard(elementId) {
   const element = document.getElementById(elementId);
   if (element) {
@@ -51,11 +51,26 @@ document.getElementById("copy").addEventListener("click", () => {
   copyToClipboard("word");
 });
 
+// Sharing functionality
+const response = await fetch(`window.location.hostname/?word=${wordName}`);
+  const blob = await response.blob();
+  const filesArray = [
+    new File(
+      [blob],
+      'wordsmith.png',
+      {
+        type: "image/png",
+        lastModified: new Date().getTime()
+      }
+   )
+  ];
+
 document.getElementById("share").addEventListener("click", () => {
   navigator.share({
     title: `New word — ${wordName}!`,
     text: `I learnt a new word called “${wordName}” today via Wordsmith, a web-based app that allows you to learn challenging vocabulary on the go!`,
-    url: window.location.href,
+    url: window.location.hostname,
+    files: filesArray,
   });
 });
 
