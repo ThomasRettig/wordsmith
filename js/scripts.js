@@ -51,21 +51,21 @@ document.getElementById("copy").addEventListener("click", () => {
   copyToClipboard("word");
 });
 
-// Sharing functionality
-async function getImage() {
-  const response = await fetch(`window.location.hostname/?word=${wordName}`);
-  const blob = await response.blob();
-  const filesArray = [
-    new File(
-      [blob],
-      'wordsmith.png',
-      {
-        type: "image/png",
-        lastModified: new Date().getTime()
-      }
-   )
-  ];
-}
+// // Sharing functionality
+// async function getImage() {
+//   const response = await fetch(`window.location.hostname/?word=${wordName}`);
+//   const blob = await response.blob();
+//   const filesArray = [
+//     new File(
+//       [blob],
+//       'wordsmith.png',
+//       {
+//         type: "image/png",
+//         lastModified: new Date().getTime()
+//       }
+//    )
+//   ];
+// }
 
 document.getElementById("share").addEventListener("click", () => {
   if (navigator.canShare) {
@@ -73,7 +73,7 @@ document.getElementById("share").addEventListener("click", () => {
       title: `New word — ${wordName}!`,
       text: `I learnt a new word called “${wordName}” today via Wordsmith, a web-based app that allows you to learn challenging vocabulary on the go!`,
       url: window.location.hostname,
-      files: filesArray,
+      // files: filesArray,
     })
   }
 });
