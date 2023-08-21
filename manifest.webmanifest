@@ -6,6 +6,7 @@
 	"name": "Wordsmith",
 	"description": "Learn new vocabulary on the go with Wordsmith!",
 	"short_name": "Wordsmith",
+	"categories": "education",
 	"icons": [
 		{
 			"src": "images/icon-256x256.png",
