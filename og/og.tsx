@@ -51,3 +51,7 @@ export default async function handler(req: Request) {
 }
 
 serve(handler);
+
+export const config: Config = {
+  path: "/image",
+};

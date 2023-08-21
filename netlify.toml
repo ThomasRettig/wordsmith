@@ -14,5 +14,5 @@
       collapseWhitespace = true
 
 [[edge_functions]]
-function = "og"
-path = "/og"
+  function = "og"
+  path = "/og"

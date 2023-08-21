@@ -68,7 +68,7 @@ async function getImage() {
 }
 
 document.getElementById("share").addEventListener("click", () => {
-  if (navigator.canShare && navigator.canShare(shareData)) {
+  if (navigator.canShare) {
     navigator.share({
       title: `New word — ${wordName}!`,
       text: `I learnt a new word called “${wordName}” today via Wordsmith, a web-based app that allows you to learn challenging vocabulary on the go!`,
