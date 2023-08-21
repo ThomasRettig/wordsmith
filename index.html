@@ -30,6 +30,7 @@
   <body>
     <main class="definitions">
       <div class="container container__definitions slideUpFirst">
+        <button id="share" aria-label="Share word"><img src="images/share.svg" draggable="false" alt="Share icon" class="share-icon" aria-hidden="true"></button>
         <h1 class="text__word js-word" aria-describedby="word-type" aria-details="definition">ascendary</h1><sup class="text__type js-type" id="word-type">noun</sup>
         <p class="text__definition slideUpFirst js-definition" id="definition"></p>
         <p class="text__synonyms slideUpFirst">
@@ -45,6 +46,14 @@
       if (navigator && navigator.serviceWorker) {
         navigator.serviceWorker.register("sw.js");
       };
+
+      document.getElementById("share").addEventListener("click", () => {
+        navigator.share({
+          title: `New word — ${wordName}!`,
+          text: `I learnt a new word called “${wordName}” today via Wordsmith, a web-based app that allows you to learn challenging vocabulary on the go!`,
+          url: window.location.href,
+        });
+      });
     </script>
     <script src="js/word-data-set.js"></script>
     <script src="js/scripts.js"></script>

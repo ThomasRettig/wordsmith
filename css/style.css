@@ -205,6 +205,22 @@ sup {
   opacity: var(--medium-opacity);
 }
 
+#share {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  color: inherit;
+  font: inherit;
+  padding: 0;
+}
+
+.share-icon {
+  width: 25px;
+  height: auto;
+  vertical-align: bottom;
+  margin-right: 6px;
+}
+
 /* ==========================================================================
    Media queries
    ========================================================================== */
