@@ -17,7 +17,7 @@
   --large-font-size: clamp(35px, 10vw, 47px);
   --base-font-stack: "Segoe UI", system-ui, sans-serif;
   --padding-top: calc(15px + 0.5vh);
-  --medium-opacity: 0.75;
+  --medium-opacity: 0.8;
   --outline-white: 2px solid white;
 }
 
@@ -95,12 +95,12 @@ p {
   font-size: var(--base-font-size);
 }
 
-button {
+#reload {
   font-family: "Segoe UI Variable Small Regular", var(--base-font-stack);
   font-size: calc(var(--base-font-size) - 4px);
 }
 
-button {
+#reload {
   opacity: var(--medium-opacity);
   background: none;
   color: inherit;
@@ -110,23 +110,23 @@ button {
   transition: 300ms ease;
 }
 
-button:hover {
+#reload:hover {
   opacity: 1;
 }
 
-button:focus-visible {
+#reload:focus-visible {
   transition: none;
   outline: var(--outline-white);
 }
 
-button::after {
+#reload::after {
   content: "Or press the space bar";
   font: inherit;
   color: inherit;
   display: none;
 }
 
-button:hover::after, button:focus::after {
+#reload:hover::after, #reload:focus::after {
   content: "(Or press the space bar)";
   opacity: calc(var(--medium-opacity) - 0.10);
   margin-left: 5px;
@@ -140,7 +140,7 @@ button:hover::after, button:focus::after {
 a {
   display: block;
   width: fit-content; /* quick hack to revert the `display: block` */
-  padding-top: calc(15px + 0.5vh);
+  padding-top: var(--padding-top);
   opacity: var(--medium-opacity);
   color: #fff;
   text-decoration-color: hsl(0deg 0% 100% / 26%);
@@ -194,10 +194,11 @@ sup {
   opacity: var(--medium-opacity);
   padding-left: 10px;
   position: absolute;
+  user-select: none;
 }
 
 .text__synonyms {
-  padding-top: var(--padding-top);
+  padding-top: 0.8vmin;
 }
 
 .text__synonyms--title {
@@ -217,6 +218,10 @@ sup {
   padding-left: 0;
   position: revert;
   display: block;
+ }
+
+ #reload {
+  display: none;
  }
 }
 
