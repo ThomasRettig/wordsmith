@@ -1,5 +1,5 @@
 {
-  "name": "wordsmith",
+  "name": "Wordsmith",
   "version": "1.0.0",
   "description": "Learn new vocabulary on the go",
   "main": "index.html",
@@ -20,8 +20,5 @@
   "homepage": "https://github.com/ThomasRettig/wordsmith#readme",
   "dependencies": {
     "http-server": "^14.1.1"
-  },
-  "devDependencies": {
-    "css-loader": "^6.8.1"
   }
 }
