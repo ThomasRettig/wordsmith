@@ -52,7 +52,8 @@ document.getElementById("copy").addEventListener("click", () => {
 });
 
 // Sharing functionality
-const response = await fetch(`window.location.hostname/?word=${wordName}`);
+async function getImage() {
+  const response = await fetch(`window.location.hostname/?word=${wordName}`);
   const blob = await response.blob();
   const filesArray = [
     new File(
@@ -64,6 +65,7 @@ const response = await fetch(`window.location.hostname/?word=${wordName}`);
       }
    )
   ];
+}
 
 document.getElementById("share").addEventListener("click", () => {
   if (navigator.canShare && navigator.canShare(shareData)) {
@@ -72,9 +74,7 @@ document.getElementById("share").addEventListener("click", () => {
       text: `I learnt a new word called “${wordName}” today via Wordsmith, a web-based app that allows you to learn challenging vocabulary on the go!`,
       url: window.location.hostname,
       files: filesArray,
-    }) else {
-      console.log("Unable to share");
-    }
+    })
   }
 });
 
