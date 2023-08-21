@@ -66,12 +66,16 @@ const response = await fetch(`window.location.hostname/?word=${wordName}`);
   ];
 
 document.getElementById("share").addEventListener("click", () => {
-  navigator.share({
-    title: `New word — ${wordName}!`,
-    text: `I learnt a new word called “${wordName}” today via Wordsmith, a web-based app that allows you to learn challenging vocabulary on the go!`,
-    url: window.location.hostname,
-    files: filesArray,
-  });
+  if (navigator.canShare && navigator.canShare(shareData)) {
+    navigator.share({
+      title: `New word — ${wordName}!`,
+      text: `I learnt a new word called “${wordName}” today via Wordsmith, a web-based app that allows you to learn challenging vocabulary on the go!`,
+      url: window.location.hostname,
+      files: filesArray,
+    }) else {
+      console.log("Unable to share");
+    }
+  }
 });
 
 // Handle refreshing
