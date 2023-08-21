@@ -66,11 +66,11 @@ html, body, section, h1, p {
 }
 
 .slideUpFirst {
-  animation: slideUpFirst 1300ms ease;
+  animation: slideUpFirst 1200ms ease;
 }
 
 .slideUpSecond {
-  animation: slideUpSecond 1300ms ease;
+  animation: slideUpSecond 1200ms ease;
 }
 
 /* ==========================================================================
@@ -116,7 +116,7 @@ p {
   opacity: 1;
 }
 
-#reload:focus-visible {
+:is(#reload, button):focus-visible {
   transition: none;
   outline: var(--outline-white);
 }
@@ -201,6 +201,7 @@ sup, .text__synonyms--title {
 
 .text__synonyms {
   padding-top: 2.5vmin;
+  text-wrap: balance;
 }
 
 .text__synonyms--title {
@@ -218,13 +219,17 @@ sup, .text__synonyms--title {
 }
 
 :is(#copy, #share):hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
+}
+
+:is(#copy, #share):active {
+  transform: scale(1);
 }
 
 .icon {
   width: 30px;
   height: auto;
-  vertical-align: bottom;
+  vertical-align: -webkit-baseline-middle;
 }
 
 .text__title {

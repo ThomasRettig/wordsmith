@@ -54,14 +54,6 @@
       if (navigator && navigator.serviceWorker) {
         navigator.serviceWorker.register("sw.js");
       };
-
-      document.getElementById("share").addEventListener("click", () => {
-        navigator.share({
-          title: `New word — ${wordName}!`,
-          text: `I learnt a new word called “${wordName}” today via Wordsmith, a web-based app that allows you to learn challenging vocabulary on the go!`,
-          url: window.location.href,
-        });
-      });
     </script>
     <script src="js/word-data-set.js"></script>
     <script src="js/scripts.js"></script>

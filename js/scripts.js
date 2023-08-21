@@ -32,6 +32,7 @@ localStorage.setItem("localColorArr", JSON.stringify(modifiedColors));
 // Change the background color
 document.body.style.backgroundColor = modifiedColors[0];
 
+// Sharing functionality
 function copyToClipboard(elementId) {
   const element = document.getElementById(elementId);
   if (element) {
@@ -44,10 +45,18 @@ function copyToClipboard(elementId) {
   } else {
     console.error(`Element with ID "${elementId}" not found.`);
   }
-}
+};
 
 document.getElementById("copy").addEventListener("click", () => {
   copyToClipboard("word");
+});
+
+document.getElementById("share").addEventListener("click", () => {
+  navigator.share({
+    title: `New word — ${wordName}!`,
+    text: `I learnt a new word called “${wordName}” today via Wordsmith, a web-based app that allows you to learn challenging vocabulary on the go!`,
+    url: window.location.href,
+  });
 });
 
 // Handle refreshing
@@ -59,4 +68,23 @@ document.addEventListener("keyup", (event) => {
 
 document.getElementById("reload").addEventListener("click", () => {
   window.location.reload();
+});
+
+// On mobile
+let touchstartY;
+let touchendY;
+    
+function checkDirection() {
+  if (touchendY > touchstartY) {
+    window.location.reload();
+  }
+};
+
+document.addEventListener("touchstart", (e) => {
+  touchstartY = e.changedTouches[0].screenY
+});
+
+document.addEventListener("touchend", (e) => {
+  touchendY = e.changedTouches[0].screenY;
+  checkDirection();
 });
