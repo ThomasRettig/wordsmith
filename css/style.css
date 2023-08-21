@@ -14,7 +14,7 @@
    ========================================================================== */
 :root {
   --base-font-size: 20px;
-  --large-font-size: clamp(35px, 10vw, 47px);
+  --large-font-size: clamp(30px, 8vw, 47px);
   --base-font-stack: "Segoe UI", system-ui, sans-serif;
   --padding-top: calc(15px + 0.5vh);
   --medium-opacity: 0.8;
@@ -31,6 +31,7 @@
 
 html {
   -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
 }
 
 html, body, section, h1, p {
@@ -89,6 +90,7 @@ body {
   place-items: center;
   background: #222;
   color: white;
+  min-height: 100vh;
 }
 
 p {
@@ -174,15 +176,12 @@ footer {
   max-width: 650px;
 }
 
-.definitions {
-  height: 90%;
-}
-
 .text__word {
   font-family: "Mayenne Sans", "Segoe UI Variable Display Black", var(--base-font-stack);
   font-size: var(--large-font-size);
   display: inline;
   padding-top: 15px;
+  hyphens: auto;
 }
 
 .text__definition {
@@ -194,31 +193,48 @@ sup {
   opacity: var(--medium-opacity);
   padding-left: 10px;
   position: absolute;
+}
+
+sup, .text__synonyms--title {
   user-select: none;
 }
 
 .text__synonyms {
-  padding-top: 0.8vmin;
+  padding-top: 2.5vmin;
 }
 
 .text__synonyms--title {
   opacity: var(--medium-opacity);
 }
 
-#share {
+#copy, #share {
   cursor: pointer;
   background: transparent;
   border: none;
   color: inherit;
   font: inherit;
   padding: 0;
+  transition: 100ms transform;
 }
 
-.share-icon {
-  width: 25px;
+:is(#copy, #share):hover {
+  transform: scale(1.1);
+}
+
+.icon {
+  width: 30px;
   height: auto;
   vertical-align: bottom;
-  margin-right: 6px;
+}
+
+.text__title {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu {
+  user-select: none;
 }
 
 /* ==========================================================================
@@ -226,19 +242,37 @@ sup {
    ========================================================================== */
 
 @media screen and (max-width: 700px) {
- .container {
-   margin: 5vw;
- }
+  .container {
+    margin: 5vw;
+  }
 
- sup {
-  padding-left: 0;
-  position: revert;
-  display: block;
- }
+  sup {
+    padding-left: 0;
+    position: revert;
+    display: block;
+  }
 
- #reload {
-  display: none;
- }
+  .icon {
+    transform: scale(1.25);
+  }
+
+  #reload {
+    display: none;
+  }
+
+  .container__definitions {
+    min-width: 90vw;
+  }
+}
+
+@media screen and (min-width: 701px) {
+  .definitions {
+    height: 90%;
+  }
+
+  .container__definitions {
+    min-width: 500px;
+  }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {

@@ -30,8 +30,16 @@
   <body>
     <main class="definitions">
       <div class="container container__definitions slideUpFirst">
-        <button id="share" aria-label="Share word"><img src="images/share.svg" draggable="false" alt="Share icon" class="share-icon" aria-hidden="true"></button>
-        <h1 class="text__word js-word" aria-describedby="word-type" aria-details="definition">ascendary</h1><sup class="text__type js-type" id="word-type">noun</sup>
+        <div class="text__title">
+          <div>
+            <h1 id="word" class="text__word js-word" aria-describedby="word-type" aria-details="definition">Ascendary</h1>
+            <sup class="text__type js-type" id="word-type">noun</sup>
+          </div>
+          <div class="menu">
+            <button id="copy" aria-label="Copy word" title="Copy word"><img src="images/copy.svg" draggable="false" alt="Copy icon" class="icon" aria-hidden="true"></button>
+            <button id="share" aria-label="Share word" title="Share word"><img src="images/share.svg" draggable="false" alt="Share icon" class="icon" aria-hidden="true"></button>
+          </div>
+        </div>
         <p class="text__definition slideUpFirst js-definition" id="definition"></p>
         <p class="text__synonyms slideUpFirst">
           <span class="text__synonyms--title">synonyms:</span>

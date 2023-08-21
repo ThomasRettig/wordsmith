@@ -5,6 +5,7 @@ var urls = [
   "fonts/MayenneSans-Regular-Web.woff2",
   "css/style.css",
   "images/share.svg",
+  "images/copy.svg",
   "images/favicon.svg",
   "images/icon-192x192.png",
   "images/icon-256x256.png",
