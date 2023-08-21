@@ -12,13 +12,11 @@ document.querySelector(".js-word").innerHTML = wordName;
 document.querySelector(".js-type").innerHTML = wordType;
 document.querySelector(".js-definition").innerHTML = wordDefinition;
 document.querySelector(".js-synonyms").innerHTML = wordSynonyms;
-document.querySelector(".js-dict-link").setAttribute("href", `https://www.merriam-webster.com/dictionary/${wordName}`);
 
 // Rotate the colors array
 function rotateArray(arr) {
   const [firstElement, ...rest] = arr;
-  arr.push(firstElement);
-  return rest;
+  return [...rest, firstElement];
 }
 
 const colorsArr = [
