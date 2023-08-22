@@ -100,9 +100,7 @@ p {
 #reload {
   font-family: "Segoe UI Variable Small Regular", var(--base-font-stack);
   font-size: calc(var(--base-font-size) - 4px);
-}
-
-#reload {
+  letter-spacing: 0.3px;
   opacity: var(--medium-opacity);
   transition: 300ms ease;
 }
