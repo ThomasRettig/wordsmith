@@ -84,26 +84,3 @@ document.addEventListener("keyup", (event) => {
     window.location.reload();
   }
 });
-
-document.getElementById("reload").addEventListener("click", () => {
-  window.location.reload();
-});
-
-// On mobile
-let touchstartY;
-let touchendY;
-    
-function checkDirection() {
-  if (touchendY > touchstartY) {
-    window.location.reload();
-  }
-};
-
-document.addEventListener("touchstart", (e) => {
-  touchstartY = e.changedTouches[0].screenY
-});
-
-document.addEventListener("touchend", (e) => {
-  touchendY = e.changedTouches[0].screenY;
-  checkDirection();
-});
