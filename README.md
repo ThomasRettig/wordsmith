@@ -8,11 +8,11 @@ This repository is a fork of the [original repo](https://github.com/nschch/words
 - https://thomasrettig.github.io/wordsmith/ (backup)
 
 ## What’s new ✨
-- **Refreshed design**: Lightly refreshed design, allowing for a more appealing, user-friendly experience.
-- **Web version**: Wordsmith is now ccessible via the web, as opposed to a Chrome extension.
-- **Vanilla JavaScript**: Replaced jQuery with modern, vanilla JavaScript for faster performance.
-- **Enhanced Word List**: Rectified numerous typos and inaccuracies in the word list.
-- **Improved accessibility**: ARIA labelling, improved colour contrast, and more. 
-- **Effortless Refresh**: Refresh the content conveniently using the spacebar.
+- 📐 **Refreshed design**: Lightly refreshed design, allowing for a more appealing, user-friendly experience.
+- 💻 **Web version**: Wordsmith is now ccessible via the web, as opposed to a Chrome extension.
+- 🧑‍💻 **Vanilla JavaScript**: Replaced jQuery with modern, vanilla JavaScript for faster performance.
+- 🔤 **Enhanced Word List**: Rectified numerous typos and inaccuracies in the word list.
+- 🦾 **Improved accessibility**: ARIA labelling, improved colour contrast, and more. 
+- 🔃 **Effortless Refresh**: Refresh the page content conveniently using the spacebar on desktop.
 
 Most importantly… Enjoy!
