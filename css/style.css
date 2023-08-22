@@ -222,10 +222,6 @@ sup, .text__synonyms--title {
   transform: scale(1.05);
 }
 
-:is(#copy, #share):active {
-  transform: scale(1);
-}
-
 .icon {
   width: 30px;
   height: auto;
@@ -283,6 +279,10 @@ sup, .text__synonyms--title {
 
   .container__definitions {
     min-width: 500px;
+  }
+
+  :is(#copy, #share):active {
+    transform: scale(0.95);
   }
 }
 
