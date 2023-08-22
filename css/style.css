@@ -104,11 +104,6 @@ p {
 
 #reload {
   opacity: var(--medium-opacity);
-  background: none;
-  color: inherit;
-  border: none;
-  padding: 0;
-  cursor: pointer;
   transition: 300ms ease;
 }
 
@@ -116,7 +111,7 @@ p {
   opacity: 1;
 }
 
-:is(#reload, button):focus-visible {
+button:focus-visible {
   transition: none;
   outline: var(--outline-white);
 }
@@ -135,31 +130,6 @@ p {
   font: inherit;
   color: inherit;
   display: revert;
-}
-
-/* link styles */
-
-a {
-  display: block;
-  width: fit-content; /* quick hack to revert the `display: block` */
-  padding-top: var(--padding-top);
-  opacity: var(--medium-opacity);
-  color: #fff;
-  text-decoration-color: hsl(0deg 0% 100% / 26%);
-  text-underline-offset: 1px;
-  text-decoration-thickness: 1.5px;
-  transition: 300ms ease;
-}
-
-a:hover {
-  text-decoration-color: #ffffff66;
-  opacity: 1;
-}
-
-a:focus-visible {
-  transition: none;
-  outline: var(--outline-white);
-  text-decoration: none;
 }
 
 .container {
@@ -208,13 +178,16 @@ sup, .text__synonyms--title {
   opacity: var(--medium-opacity);
 }
 
-#copy, #share {
+#copy, #share, #reload {
   cursor: pointer;
   background: transparent;
   border: none;
   color: inherit;
   font: inherit;
   padding: 0;
+}
+
+#copy, #share {
   transition: 100ms transform;
 }
 
