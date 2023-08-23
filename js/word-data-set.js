@@ -147,7 +147,7 @@ const words = [{
 	word: "acquiesce",
 	definition: "accept something reluctantly but without protest",
 	wordtype: "verb",
-	synonyms: "accede, agree, assent,"
+	synonyms: "accede, agree, assent"
 }, {
 	id: 92,
 	word: "acrid",
@@ -4773,7 +4773,7 @@ const words = [{
 	word: "somatic",
 	definition: "part of, or relating to the body of an organism",
 	wordtype: "adjective",
-	synonyms: ""
+	synonyms: "bodily", "physical"
 }, {
 	id: 5222,
 	word: "somber",
