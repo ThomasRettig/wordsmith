@@ -55,7 +55,7 @@ document.getElementById("share").addEventListener("click", () => {
   if (navigator.canShare) {
     navigator.share({
       title: `New word: “${wordName}”`,
-      text: `I learned a new word called “${wordName}” today via Wordsmith, a web app that helps you learn challenging vocabulary on the go!`,
+      text: `I learned a new word today via Wordsmith, a web app that helps you learn challenging vocabulary on the go!`,
       url: window.location.hostname
     })
   }
