@@ -4773,7 +4773,7 @@ const words = [{
 	word: "somatic",
 	definition: "part of, or relating to the body of an organism",
 	wordtype: "adjective",
-	synonyms: "bodily", "physical"
+	synonyms: "bodily, physical"
 }, {
 	id: 5222,
 	word: "somber",
