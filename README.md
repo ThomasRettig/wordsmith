@@ -1,6 +1,6 @@
 # Wordsmith
 
-This repository is a fork of the [original repo](https://github.com/nschch/wordsmith), which has remained unmaintained for almost 4 years. 
+This repository is a fork of the [original repo](https://github.com/nschch/wordsmith), which has remained unmaintained for almost 4 years. The Netlify deploy log can be found here: https://app.netlify.com/sites/wordsmithe/deploys
 
 ## Live demos
 - https://wordsmithe.netlify.app/ (main)
